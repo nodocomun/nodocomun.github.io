@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Guía de Git para comunicadores, organizaciones sociales y cocineros en general</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">GUÍA ABIERTA DE GIT</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">¿Git...Qué?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Glosario</a>
+                    </li>
+                    <li class="nav navbar-nav" style="position: absolute; right: 0; ">
+                    <a href="https://nodocomun.github.io"><img src="img/nodo-oo-comun.png" /></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <img src="img/octocat-chef.png" style="height: 400px; float: left; padding-bottom: 25px;" />
+                    <h1 style="text-align: left; text-transform: uppercase;">Guía de Git para comunicadores,<br/>organizaciones sociales<br/>y cocineros en general</h1>
+                    <br/>
+                    <p style="text-align: left;">Git es una tecnologías maravillosa que nos permite trabajar colaborativamente entre varias personas, llevar un control de los cambios y sobre todo, permitir que el remix y el aprendizaje sean siempre abiertos.</p>
+                    <p style="text-align: left;">Algo así merece la pena que le dediquemos un tiempo, ¿cierto? Si no te habías acercado hasta git por miedo a no entender nada, esperamos que esta guía te resulte un buen punto de inicio.</p>
+                    <br/><br/>
+                    <a class="btn btn-default page-scroll" href="#about">¡Empecemos!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Recetario de Git</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="text-align: left; padding-left: 15%; padding-right: 15%; text-align: justify;">
+                <h2>¿Git... Qué?</h2>
+                <b>Git</b> (pronunciado "guit" ) es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.
+                <h2>Vale, de nuevo... ¿Qué?</h2>
+                Este suele ser uno de los problemas por los que herramientas como Git no acaban siendo usadas por quienes, en realidad, le sacarían un jugo tremendo: <strong>el lenguaje</strong>. Si, es difícil explicarlo de otro modo... pero no imposible. En el momento en que logremos, poco a poco, empezar a explicar por analogías mucho de lo que ocurre en internet en el lado de la programación, el código, lo hack y lo geek, seguro que empezaremos a abrir un camino aún inexplorado pero siempre deseado. Tanto para el bien del desarrollo colaborativo, como para el enriquecimiento de miradas por distintos grupos que puedan estar interesados, tomemos el reto.
+                <h5>Permitirme la osadía de intentar dar <strong>otro tipo de definición</strong>:</h5>
+                <strong>Git</strong> es un programa que permite, a quien desee, aportar nuevas ideas a una idea ya existente de forma colaborativa. Todo ello a través de un sistema de control y revisión que permite que puedas elegir si alguna de esas ideas propuestas mejoran la tuya, descartarlas, volver atrás si la acepté y me arrepentí, mezclar posibilidades y hacer las tuyas propias.
+
+                <strong>¿Todavía estás buscando a Wally en la ecuación?</strong> Vamos a ir un paso más allá e intentar contar lo que podrías hacer con Git como si de la preparación de un plato se tratase y trabajásemos entre varios cocineros.
+                <h3>Antes un poco de contexto...</h3>
+                <a href="https://git-scm.com/"><img class="imagen-izq" src="img/git-logo.png" width="153" height="64" /></a>Si te interesa saber cómo nace Git y de qué se trata desde un punto de vista técnica, lo vas a encontrar en <a href="https://git-scm.com/">la página oficial</a> ... con ese bonito lema de "Lo distribuido en la nueva centralización"
+
+                Y mira si <a href="https://try.github.io/levels/1/challenges/1">tienes 15 minutos y quieres aprender </a>Git (in english) pues también todo tuyo en modo crudo.
+
+                Las plataformas más conocidas donde podemos utilizar Git son: <a href="http://www.github.com">GitHub</a>, <a href="http://www.gitlab.com">GitLab</a> y <a href="https://bitbucket.org">BitBucket</a>. También podemos instalar Git en nuestro propio servidor y no necesitar plataformas de terceros... pero eso para otro día.
+
+                Particularmente <a href="https://github.com/danicotillas">uso github</a>, una tremenda red desde donde poder compartir tus códigos, aprender de otros, leer, estudiar, seguir aprendiendo y sobre todo, conectar desde el hacer.
+                <h2></h2>
+                <h2><strong>Metámonos en la cocina</strong></h2>
+                Olvídate de códigos, palabras que suenan raro en tu cabeza, símbolos que nunca viste antes y demás jerga que te hacen cerrar la pestaña del navegador despavorido.
+
+                Imagínate que <strong>una chef te invita a su cocina</strong>. Una en la que no sólo puedes darte una vuelta, mirar y ya está: se te permite leer sus libros de recetas de primera mano y conocer todos sus secretos. Y mejor todavía, la cocina cuenta <strong>con un sistema Git</strong> por el cuál tu puedes realizar <strong>sugerencias de mejora</strong> de estas recetas, <strong>copiártelas</strong> y <strong>llevártelas</strong> a tu cocina digital, <strong>continuar mejorándolas</strong>, <strong>practicar</strong>... pero sin la posibilidad de cambiar aquello que planteaba la chef de inicio en su receta, a no ser que te lo permita.
+
+                <br/><br/>
+
+                <a href="img/al-dente-bd.jpg"><img class="imagen-der" src="img/al-dente-bd.jpg" alt="" width="300" height="200" /></a>Has ido de visita con unas cuantas personas igual de curiosas que tú y han descubierto una fabulosa receta: <strong>cómo hacer pasta</strong>. La receta consiste en la forma de producción completa de la pasta hasta que está lista para hervir. La receta acaba cuando la hierve y la sirve en el plato. El aspecto vendría a ser una cosa parecida a la foto... <strong>¿Yummy?</strong> Si eres de los que crees que le falta algo veamos qué puedes plantear...
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="text-align: left; padding-left: 15%; padding-right: 15%; text-align: justify;">
+                    <h2>GLOSARIO de un RECETARIO COLABORATIVO</h2>
+
+                <hr />
+                <br/><br/>
+
+                <h3><img class="imagen-izq" src="img/repositorio.png" alt="" width="100" height="100" />Repositorio<a href="img/repositorios-danicotillas.png" target="_blank"><img class="imagen-der" src="img/repositorios-danicotillas.png" width="150px" /></a></h3>
+                El corazón de cualquier cocina, el lugar donde guardamos nuestras recetas. Un repositorio es cada una de ellas, de forma que podemos acceder para leerlas y estudiarlas. En nuestro repositorio guardamos las nuestras, pero cuando vamos al repositorio de otras chefs podemos realizar varias acciones, desde ponerles una estrella de <em>favorito</em> hasta copiárnoslas en nuestro repositorio para desde ahí plantear los cambios que queramos, eso es, hacer <strong>un fork</strong>.
+
+                <br/><br/><br/><br/>
+
+                <hr />
+
+                <h3><img class="imagen-izq" src="img/fork.png" alt="" width="100" height="100" />Fork</h3>
+                Como no quieres estropearle la receta a la chef y prefieres practicar en tu propia cocina sin tener que esperar su aceptación, metes literalmente el tenedor (fork) y le sacas la receta de hacer pasta. Una vez en tu cocina tienes total libertad para probar todas las variables posibles. Que si ahora tomate, que luego queso, que me arrepiento y le quito el tomate, tal vez sea mejor con crema. Planteamos cambios en nuestra propia receta (commits &amp; push) y cuando hemos dado con lo que realmente queremos proponer a la chef le enviamos una propuesta (pull request). Además, si me arrepiento, siempre puedo volver atrás ya tengo la receta inicial sobre cómo hacer pasta.
+                <br/><br/>
+
+                <img class="img-responsive" src="img/forked-receta-pasta.png" width="800" />
+
+                <br/><br/><br/>
+
+                <hr />
+
+                <h3><img class="imagen-izq" src="img/commit.png" alt="" width="100" height="100" />Commit</h3>
+                Decides innovar y lanzarte a la piscina... ¡Crees que estará mejor con albahaca!. Pero tus amigas y amigos no están de acuerdo contigo. Unos creen que mejor tomate, otros que aceite, otros tocino y los más iconoclasistas quieren colocarle piña (¡a la hoguera!).
+
+                Cada uno de estos cambios realizados por nuestra parte <strong>es un commit</strong>. En nuestra receta aparecen así pero la receta maestra no ha sido modificada.
+
+                <br/><br/><br/>
+
+                <hr />
+
+                <h3><img class="imagen-izq" src="img/push.png" alt="" width="100" height="100" />Push</h3>
+                Para poder hacer que los cambios en la receta tengan efecto debemos hacerlos públicos. Con el commit ya hemos hecho la solicitud de inclusión, el push es la acción por la cuál los cambios pasan a formar parte de la receta. En nuestras propias recetas (repositorios) hacer un commit y push van acompañados de la mano. Si quisiéramos hacerlo desde la receta de la chef invitada a la que hicimos un fork, sólo ella podrá aceptar los cambios haciendo un push desde la solicitud de cambio, que se llama pul request.
+
+                <br/><br/><br/>
+
+                <hr />
+
+                <h3><img class="imagen-izq" src="img/pull.png" alt="" width="100" height="100" />Pull request</h3>
+                Queda pendiente que la chef revise y acepte si es que alguna de esas propuestas realmente mejora su receta de pasta. Ella será quién le ponga la albahaca, el aceite, el tocino o la piña, y en qué medida. Estas propuestas son probables peticiones de cambio. Cada una de ellas aparecen como <strong>pull request</strong> para cambiar la receta original (el código fuente).
+
+                La chef acepta finalmente la idea de la albahaca después de probarla antes. Agarra el bote y le mete de lleno... Acaba de hacer un pull. Parece buena, continuamos. O tal vez pasado el tiempo se arrepiente, ¡qué dilema!. Como anotó en la agenda (control de revisiones) el momento en que la puso, siempre puede volver al punto de inicio.
+
+            
+
+                <br/><br/><br/>
+
+                <hr />
+
+                <h3><img class="imagen-izq" src="img/issue.png" alt="" width="100" height="100" />Issue</h3>
+                Cuando hemos estado leyendo la receta nos han surgido muchas dudas, hay un punto entre la ebullición del agua y el momento en que se mete la pasta que no nos queda claro. Entonces, podemos <strong>hacer preguntas sobre estas dudas que tenemos a través de los Issue.</strong> De esta forma mantenemos un diálogo, tanto entre la chef y yo, como con todas aquellas personas que han querido echar un ojo a la misma receta y tal vez tengan otras soluciones posibles. La cuestión no es arreglarlo entre dos, sino ¡entre todos los que quieren compartir!
+
+                <br/><br/><br/>
+
+                <hr />
+
+                <h3><img class="imagen-izq" src="img/branch.png" alt="" width="100" height="100" />Branches</h3>
+                Nos hemos metido varias personas al mismo tiempo a ver cómo podemos mejorar la receta. Estar trabajando todas al mismo tiempo, sobre los mismos paso a paso (el código) se puede convertir, y lo hace, en un desmadre. Entonces, hacemos una copia temporal desde la misma receta para tomar un camino alternativo, que puede acabar en algo que se sume finalmente a la receta final, o tal vez no. Estos caminos múltiples son las branches (ramas) y nos permiten estar modificando distintas partes de la receta al mismo tiempo por varias personas. Una vez tenemos certeza sobre el buen devenir de nuestra <em>branch</em>, ¿qué hacemos? Pues fusionarlas, es decir, un merge :).
+
+                <br/><br/><br/><br/><br/><br/>
+                
+                <h2>Ahora, mejoremos esta receta usando Git</h2>
+                Esta guía no será ni mucho menos la mejor que encontrarás, e incluso puede que la sientas bastante incompleta. ¿Echas una mano para mejorarla?
+
+                <a href="https://nodocomun.github.io/manual-git"><img class="imagen-izq" src="img/octocat-chef.png" width="262" height="300" /></a>Desde <a href="http://nodocomun.org">Nodo Común</a> hemos creado este mismo repositorio para que podamos mejorarla entre todas y todos:
+                <h3 style="text-align: left;""><strong><a href="https://github.com/nodocomun/nodocomun.github.io">Guía de Git para comunicadores, organizaciones sociales y cocineros en general</a></strong></h3>
+                Para poder hacerlo necesitarás justamente poner en juego la terminología que aquí te viene, al tiempo que pruebes, metiendo las manos en la masa, cómo funciona la lógica git y la plataforma de GitHub.
+
+                <br/><br/><br/><br/><br/><br/>
+
+                <hr />
+                <p>
+                <a href="https://nodocomun.github.io/paginas-github/"><img class="imagen-der" src="img/github_pages.png" width="300" height="112" /></a>También puedes plantearte <strong>iniciar con tu propia página</strong> en GitHub, para ello hemos traducido la web oficial por si no entiendes bien el inglés:
+                <strong><a href="https://nodocomun.github.io/paginas-github/">https://nodocomun.github.io/paginas-github/</a>.</strong>
+                </p>    
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section 
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="contact-section" style="text-align: center;">
+        <a href="https://nodocomun.github.io"><img src="img/nodo-comun.png" width="150px" /></a>
+        <br/><br/>
+            <p>&copy; 2017 - ∞ | Nodo Común.<br/>Algunos <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.es" target="_blank">derechos reversados</a>.</p>
+            <p>Web realizada en Bootstrap con <a href="https://startbootstrap.com/template-overviews/scrolling-nav/" target="_blank">Scrolling Nav</a>.
+            <ul class="list-inline">
+                <!--<li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>-->
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
