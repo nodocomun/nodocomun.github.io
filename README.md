@@ -1,4 +1,4 @@
-# Procesos libres, aprendizaje ilimitado
+# Procesos libres, aprendizajes ilimitados.
 
 Revisa nuestros proyectos y participa de las mejoras que quieras.
 
